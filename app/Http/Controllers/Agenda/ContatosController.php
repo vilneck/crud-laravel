@@ -3,10 +3,18 @@
 namespace App\Http\Controllers\Agenda;
 
 use App\Http\Controllers\Controller;
+use App\Models\Agenda\Contato;
 use Illuminate\Http\Request;
 
-class AgendaController extends Controller
+class ContatosController extends Controller
 {
+
+    private $contatos;
+
+    public function __construct()
+    {
+        $this->contatos = new Contato();
+    }
     /**
      * Display a listing of the resource.
      *
