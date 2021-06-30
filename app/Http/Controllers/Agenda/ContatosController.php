@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Agenda;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\ContatoRequest;
 use App\Models\Agenda\Contato;
 use Illuminate\Http\Request;
 
@@ -39,7 +40,7 @@ class ContatosController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ContatoRequest $request)
     {
         $contato = Contato::create($request->all());
         if($contato)
@@ -78,7 +79,7 @@ class ContatosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(ContatoRequest $request, $id)
     {
         //
     }
