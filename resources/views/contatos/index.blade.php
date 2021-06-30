@@ -8,6 +8,7 @@
             <a href="/contatos/create" class="float-right btn-sm btn-success" href="#" role="button"><i class="fa fa-plus" aria-hidden="true"></i> Cadastrar</a>
             <p class="card-text">
             <div class="table-responsive">
+                @csrf
                 <table class="table table-hover">
                     <thead>
                         <tr>
@@ -38,8 +39,8 @@
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                           <a class="dropdown-item" href="{{url("contatos/$contato->id")}}"><i class="fa fa-edit text-primary" aria-hidden="true"></i> Ver</a>
-                                          <a class="dropdown-item" href="#"><i class="fa fa-trash text-danger" aria-hidden="true"></i> Deletar</a>
-                                          <a class="dropdown-item" href="#"><i class="fab fa-whatsapp text-success" aria-hidden="true"></i> Enviar um Zap</a>
+                                          <a class="dropdown-item js-del" href="{{url("contatos/$contato->id")}}"><i class="fa fa-trash text-danger" aria-hidden="true"></i> Deletar</a>
+                                          <a class="dropdown-item"  target="_new" href="https://api.whatsapp.com/send?phone={{$contato->telefone_celular}}"><i class="fab fa-whatsapp text-success" aria-hidden="true"></i> Enviar um Zap</a>
                                         </div>
                                       </div>
 

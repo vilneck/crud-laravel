@@ -97,6 +97,7 @@ class ContatosController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $del= Contato::destroy($id);
+        return($del)?"sim":"não";
     }
 }
