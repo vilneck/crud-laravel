@@ -29,7 +29,8 @@ class ContatosController extends Controller
      */
     public function create()
     {
-
+        $contato = new Contato();
+        return view("contatos/create",compact('contato'));
     }
 
     /**
@@ -40,7 +41,11 @@ class ContatosController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $contato = Contato::create($request->all());
+        if($contato)
+        {
+            return redirect('contatos');
+        }
     }
 
     /**
