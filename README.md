@@ -9,7 +9,7 @@
 
 ## Sobre o Projeto
 
-Esse projeto foi desenvolvido no intuito de demonstrar minhas habilidades na codificação em laravel, nele utilizo bootstrap + JQuery. O mesmo contem um CRUD de contatos para uma agenda, adianto que meu conhecimento em front laravel não é muito avançado, sempre usei Angular 8 + Lumen como api, então tentei dar o meu melhor nesse teste
+Esse projeto foi desenvolvido no intuito de demonstrar minhas habilidades na codificação em laravel, nele utilizo bootstrap + JQuery. O mesmo contém um CRUD de contatos para uma agenda, adianto que meu conhecimento em front laravel não é muito avançado, sempre usei Angular 8 + Lumen como api, então tentei dar o meu melhor nesse teste
 
 ## Como instalar
 
