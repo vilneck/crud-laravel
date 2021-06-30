@@ -5,7 +5,7 @@
         <div class="card-body">
 
             <h4 class="card-title float-left"><a href="../contatos"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></a> Contato - {{$contato->nome}} {{$contato->sobrenome}}</h4>
-            <a name="" id="" class="float-right btn-sm btn-primary" href="#" role="button"><i class="fa fa-edit" aria-hidden="true"></i> Editar</a>
+            <a name="" id="" class="float-right btn-sm btn-primary" href="{{url("contatos/$contato->id/edit")}}" role="button"><i class="fa fa-edit" aria-hidden="true"></i> Editar</a>
             <p class="card-text">
                 <table class="table table-condensed">
                     <tbody>

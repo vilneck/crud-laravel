@@ -5,7 +5,7 @@
         <div class="card-body">
 
             <h4 class="card-title float-left">Meus contatos</h4>
-            <a href="contatos/create" id="" class="float-right btn-sm btn-success" href="#" role="button"><i class="fa fa-plus" aria-hidden="true"></i> Cadastrar</a>
+            <a href="/contatos/create" class="float-right btn-sm btn-success" href="#" role="button"><i class="fa fa-plus" aria-hidden="true"></i> Cadastrar</a>
             <p class="card-text">
             <div class="table-responsive">
                 <table class="table table-hover">

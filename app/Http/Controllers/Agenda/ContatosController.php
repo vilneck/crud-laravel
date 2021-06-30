@@ -30,8 +30,8 @@ class ContatosController extends Controller
      */
     public function create()
     {
-        $contato = new Contato();
-        return view("contatos/create",compact('contato'));
+
+        return view("contatos/create");
     }
 
     /**
@@ -69,7 +69,8 @@ class ContatosController extends Controller
      */
     public function edit($id)
     {
-        //
+        $contato = Contato::find($id);
+        return view('contatos/create',compact('contato'));
     }
 
     /**
@@ -81,7 +82,11 @@ class ContatosController extends Controller
      */
     public function update(ContatoRequest $request, $id)
     {
-        //
+        $contato = Contato::find($id);
+        $contato->fill($request->all());
+        $contato->save();
+        return redirect('contatos');
+
     }
 
     /**
