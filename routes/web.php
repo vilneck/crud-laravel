@@ -13,4 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'App\Http\Controllers\Agenda\ContatosController@index');
+Route::resource('/contatos', 'App\Http\Controllers\Agenda\ContatosController');

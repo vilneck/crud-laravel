@@ -11,10 +11,6 @@ class ContatosController extends Controller
 
     private $contatos;
 
-    public function __construct()
-    {
-        $this->contatos = new Contato();
-    }
     /**
      * Display a listing of the resource.
      *
@@ -22,7 +18,8 @@ class ContatosController extends Controller
      */
     public function index()
     {
-        return view("index");
+        $contatos = Contato::all();
+        return view("contatos/index",compact('contatos'));
     }
 
     /**
@@ -32,7 +29,7 @@ class ContatosController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -54,7 +51,8 @@ class ContatosController extends Controller
      */
     public function show($id)
     {
-        //
+        $contato = Contato::find($id);
+        return view("contatos/show",compact('contato'));
     }
 
     /**

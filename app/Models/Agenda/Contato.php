@@ -12,13 +12,20 @@ class Contato extends Model
 
     protected $table='contatos';
 
+    protected $appends =['data_criacao'];
+
     protected $fillable=[
-        'nome_contato',
+        'nome',
         'sobrenome',
         'telefone_celular',
         'telefone_fixo',
         'email',
         'observacoes'
     ];
+
+    public function getDataCriacaoAttribute()
+    {
+        return date('d/m/Y H:i', strtotime($this->attributes['created_at']));
+    }
 
 }
