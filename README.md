@@ -9,11 +9,12 @@
 
 ## Sobre o Projeto
 
-Esse projeto foi desenvolvido no intuito de demonstrar minhas habilidades na codificação em laravel junto ao bootstrap e JQuery, ele contem um CRUD de contatos de uma agenda
+Esse projeto foi desenvolvido no intuito de demonstrar minhas habilidades na codificação em laravel, nele utilizo bootstrap + JQuery. O mesmo contem um CRUD de contatos para uma agenda, adianto que meu conhecimento em front laravel não é muito avançado, sempre usei Angular 8 + Lumen como api, então tentei dar o meu melhor nesse teste
 
 ## Como instalar
 
-1 - Clonar o repositório
-2 - Instalar as dependencias com o comando composer i
-3 - Copiar o arquivo .env-exemple e alterando seu nome para .env e alterando seu conteudo para o seu banco de dados local
-4 - Rodar o comando php artisan serve
+1 - Clonar o repositório com o comando git clone git@github.com:vilneck/crud-laravel.git
+<br>2 - Instalar as dependencias com o comando composer i
+<br>3 - Copiar o arquivo .env-exemple alterando seu nome para .env e alterando o conteúdo nas variáveis DB_ para o seu banco de dados local
+<br>4 - Estando na raiz do projeto, rodar o comando php artisan migrate
+<br>5 - Rodar o comando php artisan serve
