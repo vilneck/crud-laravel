@@ -16,7 +16,7 @@
                             <th scope="col">Nome</th>
                             <th scope="col">Sobrenome</th>
                             <th scope="col">Celular</th>
-                            <th scope="col">Fixo</th>
+                            <th scope="col">Telefone Fixo</th>
                             <th scope="col">Email</th>
                             <th scope="col">Criado em</th>
                             <th scope="col"></th>

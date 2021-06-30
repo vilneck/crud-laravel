@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Agenda;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ContatoRequest;
 use App\Models\Agenda\Contato;
-use Illuminate\Http\Request;
 
 class ContatosController extends Controller
 {
@@ -97,7 +96,7 @@ class ContatosController extends Controller
      */
     public function destroy($id)
     {
-        $del= Contato::destroy($id);
-        return($del)?"sim":"não";
+       return Contato::destroy($id);
     }
+
 }
